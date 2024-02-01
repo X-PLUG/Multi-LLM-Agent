@@ -1,4 +1,4 @@
-# ✨$\alpha$-UMi: Small LLMs Are Weak Tool Learners: A Multi-LLM Agent
+# ✨α-UMi: Small LLMs Are Weak Tool Learners: A Multi-LLM Agent
 <div align="center">
 Weizhou Shen<sup>1</sup>, Chenliang Li<sup>2</sup>, Hongzhan Chen<sup>1</sup>, Ming Yan<sup>2*</sup>, Xiaojun Quan<sup>1*</sup>, Hehong Chen<sup>2</sup>, Ji Zhang<sup>2</sup>, Fei Huang<sup>2</sup>
 </div>
@@ -41,18 +41,18 @@ English | [简体中文](README_zh.md)
 
 <img src="assets/concept.png"  width="70%">
 
-A conceptual comparison of  traditional single-LLM agent framework (top) and  $\alpha$-UMi (bottom). 
+A conceptual comparison of  traditional single-LLM agent framework (top) and  alpha-UMi (bottom). 
 
 </div>
 
-$\alpha$-UMi is a Multi-LLM collaborated agent for tool learning. It decomposes the capabilities of a single LLM into three components, namely planner,
+α-UMi is a Multi-LLM collaborated agent for tool learning. It decomposes the capabilities of a single LLM into three components, namely planner,
 caller, and summarizer. For each step of agent execution. The planner generate a rationale for the current step based on the state of the system and selects the caller or summarizer to generate downstream output. The caller is directed by the rationale and responsible for invocating specific tools to interact with. The summarizer is guided by the planner to craft the ultimate user answer based on the execution trajectory.
 
 
 <div align="center">
 <img src="assets/framework.png"  width="95%"> 
 
-An illustration of how $\alpha$-UMi works to complete a task.
+An illustration of how α-UMi works to complete a task.
 </div>
 
 ## Spotlight
@@ -63,7 +63,7 @@ An illustration of how $\alpha$-UMi works to complete a task.
 
 
 ## News
-* [01.30] We released code of ✨$\alpha$-UMi with its pre-trained and instruction tuning checkpoints.
+* [01.30] We released code of ✨α-UMi with its pre-trained and instruction tuning checkpoints.
 
 ## Checkpoints
 
@@ -134,7 +134,7 @@ After runnning the above script, you will create the training data of ToolBench 
 
 ### GLPFT Training
 
-Our $\alpha$-UMi adopts a two-stage GLPFT fine-tuning that first warm-up a backbone LLM and then fine-tune the planner, caller, summarizer separately.
+Our α-UMi adopts a two-stage GLPFT fine-tuning that first warm-up a backbone LLM and then fine-tune the planner, caller, summarizer separately.
 
 1. First, we fine-tune an LLM for the whole tool learning agent task.
 
@@ -277,7 +277,7 @@ torchrun --nproc_per_node=$NNODE --master_port=$PORT train_mem.py \
 
 ### Inference and evaluate
 
-We provide the statically test data for the experiments in Section 4.1 of our paper in ```./GLPFT/dataset/toolbench/test```, we can inference and evaluate the $\alpha$-UMi system as Section 4.1 by running the following script:
+We provide the statically test data for the experiments in Section 4.1 of our paper in ```./GLPFT/dataset/toolbench/test```, we can inference and evaluate the α-UMi system as Section 4.1 by running the following script:
 ```
 cd ./GLPFT
 
@@ -321,9 +321,9 @@ do
 done
 ```
 
-## $\alpha$-UMi with RapidAPI Simulator
+## α-UMi with RapidAPI Simulator
 
-We surpport using $\alpha$-UMi with the RapidAPI simulator implemented by the ToolBench team ([github](https://github.com/OpenBMB/ToolBench)), the codes are in ```./ToolBench-multiLLM```. To do so, you should first fill out the [form](https://forms.gle/oCHHc8DQzhGfiT9r6) to request a Toolbench Key from Toolbench team. Then you can begin to run the simulator with the trained Planner, Caller and Summarizer:
+We surpport using α-UMi with the RapidAPI simulator implemented by the ToolBench team ([github](https://github.com/OpenBMB/ToolBench)), the codes are in ```./ToolBench-multiLLM```. To do so, you should first fill out the [form](https://forms.gle/oCHHc8DQzhGfiT9r6) to request a Toolbench Key from Toolbench team. Then you can begin to run the simulator with the trained Planner, Caller and Summarizer:
 
 ```
 cd ToolBench-multiLLM
@@ -470,7 +470,7 @@ Results of the real-time evaluation (calling real APIs to solve the user task)
 
 - [ ] Release our model and code for ToolAlpaca.
 - [ ] Release our model and code for MATH and GSM8K, and our training data (collected with TORA (Gou et al., 2023))
-- [ ] Make $\alpha$-UMi generalized to more agent tasks!
+- [ ] Make α-UMi generalized to more agent tasks!
 
 ## Citation
 

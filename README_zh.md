@@ -1,4 +1,4 @@
-# ✨$\alpha$-UMi: 多模型协作工具调用agent框架
+# ✨α-UMi: 多模型协作工具调用agent框架
 <div align="center">
 Weizhou Shen<sup>1</sup>, Chenliang Li<sup>2</sup>, Hongzhan Chen<sup>1</sup>, Ming Yan<sup>2*</sup>, Xiaojun Quan<sup>1*</sup>, Hehong Chen<sup>2</sup>, Ji Zhang<sup>2</sup>, Fei Huang<sup>2</sup>
 </div>
@@ -41,17 +41,17 @@ English | [简体中文](README_zh.md)
 
 <img src="assets/concept.png"  width="70%">
 
-传统单LLM代理框架（上）与$\alpha$-UMi（下）的概念对比。
+传统单LLM代理框架（上）与α-UMi（下）的概念对比。
 
 </div>
 
-$\alpha$-UMi 是一个用于工具学习的多LLM协作智能体。它将单个LLM的能力分解为三个组件，即规划器（planner）、调用器（caller）和总结器（summarizer）。在智能体执行的每一步中，规划器根据系统的状态为当前步骤生成理由，并选择调用器或总结器来生成下游输出。调用器由理由指导，并负责调用特定的工具进行交互。总结器在规划器的指导下，根据执行轨迹制定最终的用户答案。
+α-UMi 是一个用于工具学习的多LLM协作智能体。它将单个LLM的能力分解为三个组件，即规划器（planner）、调用器（caller）和总结器（summarizer）。在智能体执行的每一步中，规划器根据系统的状态为当前步骤生成理由，并选择调用器或总结器来生成下游输出。调用器由理由指导，并负责调用特定的工具进行交互。总结器在规划器的指导下，根据执行轨迹制定最终的用户答案。
 
 
 <div align="center">
 <img src="assets/framework.png"  width="95%"> 
 
-一个展示$\alpha$-UMi如何完成任务的插图。
+一个展示α-UMi如何完成任务的插图。
 </div>
 
 ## 亮点
@@ -61,7 +61,7 @@ $\alpha$-UMi 是一个用于工具学习的多LLM协作智能体。它将单个L
 
 
 ## 更新
-* [01.30] 我们发布了✨$\alpha$-UMi的代码，以及它的模型参数。
+* [01.30] 我们发布了✨α-UMi的代码，以及它的模型参数。
 
 
 ## 模型参数
@@ -133,7 +133,7 @@ done
 
 ### GLPFT训练
 
-我们的$\alpha$-UMi采用了两阶段的GLPFT微调方法，首先对主干大型语言模型（LLM）进行预热，然后分别对planner、caller、summarizer进行微调。
+我们的α-UMi采用了两阶段的GLPFT微调方法，首先对主干大型语言模型（LLM）进行预热，然后分别对planner、caller、summarizer进行微调。
 1. 首先，我们对一个LLM底座进行微调，使其学习整个工具调用智能体任务。
 ```
 cd ./GLPFT
@@ -275,7 +275,7 @@ torchrun --nproc_per_node=$NNODE --master_port=$PORT train_mem.py \
 
 ### 推理和评估
 
-我们为论文Section 4.1的实验提供了静态测试数据，存放在```./GLPFT/dataset/toolbench/test```目录下，我们可以通过运行以下脚本来进行 $\alpha$-UMi 系统的推理和评估:：
+我们为论文Section 4.1的实验提供了静态测试数据，存放在```./GLPFT/dataset/toolbench/test```目录下，我们可以通过运行以下脚本来进行 α-UMi 系统的推理和评估:：
 ```
 cd ./GLPFT
 
@@ -319,9 +319,9 @@ do
 done
 ```
 
-## $\alpha$-UMi 与 RapidAPI 模拟器
+## α-UMi 与 RapidAPI 模拟器
 
-我们支持像ToolBench团队([github](https://github.com/OpenBMB/ToolBench))一样使用真实的RapidAPI环境来运行我们的$\alpha$-UMi，代码在 ```./ToolBench-multiLLM```目录下。在开始之前，你需要先填写[表格](https://forms.gle/oCHHc8DQzhGfiT9r6)来向ToolBench团队获取一个ToolBench Key. 之后你可以使用训练好的planner, caller和summarizer来运行一个RapidAPI模拟环境:
+我们支持像ToolBench团队([github](https://github.com/OpenBMB/ToolBench))一样使用真实的RapidAPI环境来运行我们的α-UMi，代码在 ```./ToolBench-multiLLM```目录下。在开始之前，你需要先填写[表格](https://forms.gle/oCHHc8DQzhGfiT9r6)来向ToolBench团队获取一个ToolBench Key. 之后你可以使用训练好的planner, caller和summarizer来运行一个RapidAPI模拟环境:
 
 ```
 cd ToolBench-multiLLM
@@ -468,7 +468,7 @@ python toolbench/tooleval/eval_preference.py \
 
 - [ ] 发布我们用于ToolAlpaca的模型和代码.
 - [ ] 发布我们用于 MATH和GSM8K的模型和代码，以及我们的训练数据 (使用TORA (Gou et al., 2023)样式收集)
-- [ ] 使$\alpha$-UMi泛化到更多的智能体任务。
+- [ ] 使α-UMi泛化到更多的智能体任务。
 
 ## 引用
 
