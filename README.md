@@ -15,12 +15,10 @@ shenwzh3@mail2.sysu.edu.cn, quanxj3@mail.sysu.edu.cn, ym119608@alibaba-inc.com
 
 
 <!-- <div align="center">
-    <a href="https://huggingface.co/spaces/MAGAer13/mPLUG-Owl"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
     <a href="https://modelscope.cn/studios/damo/mPLUG-Owl/summary"><img src="assets/Demo-ModelScope-brightgreen.svg" alt="Demo ModelScope"></a>
     <a href="https://replicate.com/joehoover/mplug-owl"><img src="https://replicate.com/replicate/mplug-owl/badge" alt="Run with Replicate"></a>
     <a href="https://github.com/X-PLUG/mPLUG-Owl/blob/main/LICENSE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
-    <a href="http://mm-chatgpt.oss-cn-zhangjiakou.aliyuncs.com/mplug_owl_demo/released_checkpoint/mPLUG_Owl_paper.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
-    <a href="https://arxiv.org/abs/2304.14178"><img src="assets/Paper-Arxiv-orange.svg" ></a>
+    <a href="https://arxiv.org/pdf/2401.07324.pdf"><img src="assets/Paper-Arxiv-orange.svg" ></a>
     <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FX-PLUG%2FmPLUG-Owl&count_bg=%23E97EBA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false" alt="Hits"></a>
     <a href="https://twitter.com/xuhaiya2483846/status/1654640739010351106"><img src='assets/-twitter-blue.svg'></a>
 </div> -->
