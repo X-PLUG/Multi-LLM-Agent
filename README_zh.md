@@ -47,10 +47,18 @@ English | [简体中文](README_zh.md)
 
 
 <div align="center">
-<img src="assets/framework.png"  width="95%"> 
+<img src="assets/case_1.png"  width="95%"> 
 
-一个展示α-UMi如何完成任务的插图。
+一个展示 α-UMi 如何完成任务的插图。
 </div>
+
+
+<div align="center">
+<img src="assets/case_2.png"  width="95%"> 
+
+一个展示 α-UMi 如何通过反思完成任务的插图。
+</div>
+
 
 ## 亮点
 * 使小型LLMs能够协作，并在工具学习中超越性能强大的闭源大型语言模型。

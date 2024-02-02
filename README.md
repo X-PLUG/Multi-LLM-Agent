@@ -48,10 +48,18 @@ caller, and summarizer. For each step of agent execution. The planner generate a
 
 
 <div align="center">
-<img src="assets/framework.png"  width="95%"> 
+<img src="assets/case_1.png"  width="95%"> 
 
 An illustration of how α-UMi works to complete a task.
 </div>
+
+
+<div align="center">
+<img src="assets/case_2.png"  width="95%"> 
+
+An illustration of how α-UMi works to complete a task with reflection.
+</div>
+
 
 ## Spotlight
 * Enabling small LLMs to collaborate and outperform strong close-source large LLMs in tool learning.
