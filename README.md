@@ -136,7 +136,7 @@ do
 done
 ```
 
-After runnning the above script, you will create the training data of ToolBench for GLPFT, which will be stored in ```./GLPFT/dataset/toolbench/train```.
+After running the above script, you will create the training data of ToolBench for GLPFT, which will be stored in ```./GLPFT/dataset/toolbench/train```.
 
 ### GLPFT Training
 
